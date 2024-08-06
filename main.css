@@ -1,0 +1,151 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+
+
+nav1 {
+    background-color: #b8b8b8;
+    color: #fff;
+    text-align: left;
+    padding: 50px 0;
+    margin-top: 20px;
+}
+
+nav1 .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+}
+
+nav1 .social-links li {
+    margin: 0 10px;
+}
+
+nav1 .social-links li a img {
+    width: 24px;
+    height: 24px;
+}
+
+.hero {
+    background: linear-gradient(to right, #ececec, #f7f7f7);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #6c5ce7;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #5a4cd7;
+}
+
+footer {
+    background-color: #b8b8b8;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer .social-links li {
+    margin: 0 10px;
+}
+
+footer .social-links li a img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+}
