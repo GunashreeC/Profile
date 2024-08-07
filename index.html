@@ -8,10 +8,10 @@
 </head>
 <body>
     <header>
-        <divp class="logo-container">
+        <div class="logo-container">
             <img src="icons/girl.png" alt="Profile Picture" class="profile-img">
             <span class="name">Gunashree Channakeshava</span>
-        </divp>
+        </div>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -20,15 +20,9 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <nav1>
-            <ul class="social-links">
-                <li><a href="#"><img src="icons/linkedin-2.png" alt="LinkedIn"></a></li>
-                <li><a href="#"><img src="icons/github.png" alt="GitHub"></a></li>
-                <li><a href="#"><img src="icons/email.png" alt="Book"></a></li>
-            </ul>
-        </nav1>
     </header>
     
+    <!-- Home Section with Background Image -->
     <section id="home" class="hero">
         <div class="container">
             <h1>Hey, I'm Gunashree Channakeshava</h1>
@@ -37,14 +31,90 @@
         </div>
     </section>
 
-    <!-- Additional sections for About, Projects, Contact, etc. -->
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container1">
+
+            <div class="intro">
+                <h2>About Me</h2>
+                <p>I'm a Frontend Focused Web Developer building and managing the Front-end of Websites and Web Applications that lead to the success of the overall product. Check out some of my work in the Projects section.</p>
+                <p>I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to Connect or Follow me on my LinkedIn and Github where I post useful content related to Web Development and Programming.</p>                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/your-profile" target="_blank"><img src="icons/linkedin-2.png" alt="LinkedIn"></a>
+                    <a href="https://github.com/your-github-profile" target="_blank"><img src="icons/github.png" alt="GitHub"></a>
+                    <a href="mailto:your-email@example.com"><img src="icons/email.png" alt="Email"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <p>Here you will find some of the personal and client projects that I created recently.</p>
+        
+        <!-- Project Item 1 -->
+        <div class="project-item">
+            <div class="project-image">
+                <img src="mac.jpg" alt="Project Image">
+            </div>
+            <div class="project-content">
+                <h3>Drug Name Generator</h3>
+                <p>This is a website created for the University of Illinois Cancer Center booth at the American Society of Clinical Oncology.</p>
+                <a href="https://gunashreec.github.io/DrugNameGen/" target="_blank" class="btn">Demo</a>
+            </div>
+        </div>
+        
+        <!-- Project Item 2 -->
+        <div class="project-item">
+            <div class="project-image">
+                <img src="mac.jpg" alt="Project Image">
+            </div>
+            <div class="project-content">
+                <h3>Drug Name Generator</h3>
+                <p>This is a website created for the University of Illinois Cancer Center booth at the American Society of Clinical Oncology.</p>
+                <a href="https://gunashreec.github.io/DrugNameGen/" target="_blank" class="btn">Demo</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you have any questions or just want to get in touch, feel free to reach out through the form below!</p>
+            <form action="/submit_form" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    
 
     <footer>
+
         <ul class="social-links">
-            <li><a href="#"><img src="icons/linkedin-2.png" alt="LinkedIn"></a></li>
-            <li><a href="#"><img src="icons/github.png" alt="GitHub"></a></li>
-            <li><a href="#"><img src="icons/email.png" alt="Book"></a></li>
+            <li><a href="https://www.linkedin.com/in/your-profile" target="_blank"><img src="icons/linkedin-2.png" alt="LinkedIn"></a></li>
+            <li><a href="https://github.com/your-github-profile" target="_blank"><img src="icons/github.png" alt="GitHub"></a></li>
+            <li><a href="mailto:your-email@example.com"><img src="icons/email.png" alt="Email"></a></li>
         </ul>
+        <p>&copy; 2024 Gunashree Channakeshava. All rights reserved.</p>
+
     </footer>
 </body>
 </html>
