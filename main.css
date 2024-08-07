@@ -11,6 +11,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
 }
 
 .logo-container {
@@ -38,6 +39,7 @@ nav ul {
     margin: 0;
     margin-right: 20px;
     padding: 0;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
 }
 
 nav ul li {
@@ -126,18 +128,17 @@ nav1 .social-links li a img {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 500%;
     max-width: 1200px;
-    background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds a semi-transparent background to the content */
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
+    width: 100%; /* Ensures it doesn't overflow */
 }
-
 
 .intro {
     color: #4b3f3f;
     max-width: 600px;
-    padding-left: 800px;
+    padding-left: 800px; /* Adjusted padding for better layout */
 }
 
 .intro h2 {
@@ -167,7 +168,6 @@ nav1 .social-links li a img {
     height: 30px;
 }
 
-
 .projects, .contact {
     padding: 50px 20px;
 }
@@ -177,8 +177,9 @@ nav1 .social-links li a img {
     text-align: center;
     margin-bottom: 30px;
 }
+
 .projects {
-    padding: 80px 20px; /* Increased padding to make the section bigger */
+    padding: 80px 20px;
     background-color: #f7f7f7;
     text-align: center;
 }
@@ -241,24 +242,6 @@ nav1 .social-links li a img {
 
 .project-content .btn:hover {
     background-color: #5a4cd7;
-}
-
-/* Make section responsive */
-@media (max-width: 768px) {
-    .project-item {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .project-content {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
-    .project-content h3,
-    .project-content p {
-        text-align: center;
-    }
 }
 
 .contact {
@@ -330,7 +313,7 @@ footer {
     background-color: #605e5e;
     color: #fff;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 20px 0;
 }
 
@@ -351,7 +334,27 @@ footer .social-links li a img {
     height: 24px;
 }
 
+/* Media Queries for responsiveness */
+
+/* For large screens */
+@media (max-width: 1200px) {
+    .intro {
+        padding-left: 0; /* Adjust padding for large screens */
+    }
+}
+
+/* For tablets */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
     .hero h1 {
         font-size: 2rem;
     }
@@ -360,7 +363,66 @@ footer .social-links li a img {
         font-size: 1rem;
     }
 
-    nav ul {
-        justify-content: center;
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .project-content h3,
+    .project-content p {
+        text-align: center;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .name {
+        font-size: 1.2rem;
+    }
+
+    nav ul li {
+        margin-left: 30px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .about {
+        padding: 200px 20px;
+    }
+
+    .about-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .projects h2,
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1rem;
     }
 }
